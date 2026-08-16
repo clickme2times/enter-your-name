@@ -1,0 +1,88 @@
+body {
+    background-image: url("background.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    background-color: transparent;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    backdrop-filter: blur(5px);
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.name {
+    width: 200px;
+    height: 30px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    color: white;
+    margin-bottom: 10px;
+    background: transparent;
+    outline: none;
+    border-bottom: 2px solid rgba(255, 255, 255)
+}
+
+.submit {
+    background-color: whitesmoke;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 10px;
+    transition: .5s;
+}
+.submit:hover {
+    background-color: rgba(255, 255, 255, 0);
+    height: 50px;
+    width: 80px;
+    border-radius: 20px;
+    margin-top: .5px;
+}
+.submit:active {
+    background-color: rgba(132, 189, 250, 0.603);
+    height: 50px;
+    width: 80px;
+    border-radius: 20px;
+}
+
+.overlay {
+    display: flex;
+    width: 200px;
+}
+
+.popup {
+    position: fixed;
+    display: flex;
+    background-color:rgba(247, 247, 247, 0.603);
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    border: 2px solid white;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.close {
+    display: flex;
+    position: relative;
+    background: transparent;
+    
+}
