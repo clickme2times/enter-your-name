@@ -78,6 +78,7 @@ form {
     border: 2px solid white;
     flex-direction: column;
     padding: 30px;
+    color: black;
 }
 
 .close {
