@@ -25,7 +25,7 @@ function sayHello() {
 
     }
 
-    showText.textContent = "WALA KANG JOWA " + name + "!";
+    showText.textContent = name + ", wala kang jowa!";
 
     popup.style.display = "flex";
     container.style.display = "none";
