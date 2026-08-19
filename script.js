@@ -7,10 +7,14 @@ const form = document.querySelector("form");
 const container = document.getElementById("container");
 const error = document.getElementById("error");
 const closeButton2 = document.getElementById("closeButton2");
+const music = document.getElementById(`music`);
+const showText2 = document.getElementById(`showText2`);
 
 // Hide popup when the page loads
 popup.style.display = "none";
 error.style.display = "none";
+music.pause();
+music.currentTime = 0;
 
 // Show popup
 function sayHello() {
@@ -21,11 +25,15 @@ function sayHello() {
         error.style.display = "flex";
         popup.style.display = "none";
         container.style.display = "none";
+        music.pause();
+        music.currentTime = 0;
         return;
 
     }
 
-    showText.textContent = name + ", wala kang jowa!";
+    showText.textContent = `Hi ` + name + "! I hope you are now okay";
+    showText2.textContent = `Please dont close this window for a while`;
+    music.play();
 
     popup.style.display = "flex";
     container.style.display = "none";
@@ -48,10 +56,14 @@ closeButton.addEventListener("click", function() {
     popup.style.display = "none";
     container.style.display = "flex";
     nameInput.value = "";
+    music.pause();
+    music.currentTime = 0;
 });
 
 closeButton2.addEventListener("click", function() {
     error.style.display = "none";
     container.style.display = "flex";
     nameInput.value = "";
+    music.pause();
+    music.currentTime = 0;
 });
