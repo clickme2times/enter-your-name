@@ -78,17 +78,20 @@ form {
     border: 2px solid white;
     flex-direction: column;
     padding: 30px;
-    color: black;
+    font-family: arial;
 }
 
 .close {
     display: flex;
     position: relative;
     background: transparent;
-    
+
 }
 
-foot {
+footer {
     font-size: .6em;
     font-family: Times New Roman, Times, serif;
+}
+.textanimate {
+    text-align: center;
 }
