@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Hide and Show Content</title>
+       <title>Enter Your Name</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,17 +19,18 @@
     </div>
 
     <div class="popup" id="popup">
-        <h1 id="showText">WALA KANG JOWA</h1>
+        <h1 id="showText" class="textanimate">Hi, I hope you are now okay</h1>
+        <h1 id="showText2" class="textanimate">Please don't close this window for a while.</h1>
+        <audio control autoplay id="music">
+            <source src="kung siya man.mp3" type="audio/mpeg">
+        </audio>
         <button type="close" id="closeButton">Close</button>
-        <footer>Created By: ERAZER</footer>
     </div>
 
     <div class="popup" id="error">
         <h1 id="showText2">Please Enter Your Name</h1>
         <button type="close" id="closeButton2">Close</button>
-        <footer>Created By: ERAZER</footer>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
